@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require('dotenv');
 const path = require('path')
 const connectDatabase = require('./config/connectDatabase');
-dotenv.config({path: path.join(__dirname,'config','config.env')})
+dotenv.config()
 const cors = require('cors')
 
 const products = require('./routes/product');
